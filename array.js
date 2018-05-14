@@ -15,7 +15,7 @@ function min(inArray) {
     }
 
     // Now that the for loop has finished, log the minimum to the console.
-    console.log("The minimum value is " + min + ".");
+    console.log('The minimum value is ' + min + '.');
 }
 
 // The function max will take in an array and log its maximum value.
@@ -29,19 +29,25 @@ function max(inArray) {
     }
 
     // Now that the for loop has finished, log the minimum to the console.
-    console.log("The maximum value is " + max + ".");
+    console.log('The maximum value is ' + max + '.');
 }
 
 // The function sum will take in an array and log the sum of the array.
 function sum(inArray) {
-
-    console.log("The soum of the array is  " + sum+ ".");
-
+let sum = inArray[0]
+    for (let i = 1; i < inArray.length; i += 1) {
+        sum = sum + inArray[i]
+    }
+    console.log('The sum of the array is ' + sum + '.');
 }
 
 // The function average will take in an array and log the average of the values.
 function average(inArray) {
-
+let average = inArray[0]
+    for (let i = 1; i < inArray.length; i += 1) {
+        average = average + inArray[i]
+    }
+    console.log('The average of the array is ' + average /inArray.length + '.')
 }
 
 
