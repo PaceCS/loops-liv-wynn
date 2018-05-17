@@ -8,7 +8,6 @@ function triangleFor(userInput) {
         console.log(row);
         row += '#';
     }
-
 }
 
 //Try out your function here.
