@@ -2,9 +2,35 @@
 // The function outputs the sum of all multiples of 3 and 5 that are less than that number.
 
 function sum35While(N) {
+    let counter = 1
+sum = 0
+multiples = 0
+    while (counter < N) {
 
+        if (counter % 3 == 0) {
+            div3 = true;
+        } else {
+            div3 = false;
+        }
+        if (counter % 5 == 0) {
+            div5 = true;
+        } else {
+            div5 = false;
+        }
+        if (div3) {
+            multiples = multiples + 1
+            sum = sum + counter;
+        } else if (div5) {
+            multiples = multiples + 1
+            sum = sum + counter;
+        }
+        counter += 1;
+    }
+    console.log ('There are ' + multiples + ' multiples of 3 and 5 that are less than ' + N + '.');
+    console.log('Their sum is ' + sum + '.');
 }
-
+/* There are 8 multiples of 3 and 5 that are less than 20.
+Their sum is 78.*/
 //Try out your function here.
 sum35While(6);
 sum35While(20);

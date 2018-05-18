@@ -20,19 +20,17 @@ function sum35For(N) {
 
 if (div3) {
     multiples = multiples + 1
-} else if (div5){
-    multiples = multiples + 1
+    sum = sum + counter;
+} else if (div5) {
+    multiples = multiples + 1;
+    sum = sum + counter;
 }
 }
-console.log(multiples)
-if (div3){
-sum = sum + counter
+console.log( 'There are ' + multiples + ' multiples of 3 and 5 that are less than ' + N+ '.')
+/*There are 8 multiples of 3 and 5 that are less than 20.
+Their sum is 78.*/
+console.log('Their sum is ' + sum + '.')
 }
-if (div5){
-    sum = sum + counter
-}
-}
-console.log (sum)
 
 //Try out your function here.
 sum35For(6);
